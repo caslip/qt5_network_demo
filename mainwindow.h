@@ -2,6 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "QPushButton"
+#include <QTimer>
+#include <QWidget>
+#include "QVBoxLayout"
+#include "QHBoxLayout"
+#include "QTextBrowser"
 
 class MainWindow : public QMainWindow
 {
@@ -10,5 +16,22 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+
+private:
+    QPushButton *btn[2];
+    QTextBrowser *text;
+    QTimer *timer;
+    QWidget *QHWidget , *QVWidget;
+    QVBoxLayout *Vboxlayout;
+    QHBoxLayout *Hboxlayout;
+    QString getHostinfo();
+
+private slots:
+//    void timeout();
+//    void showHostinfo();
+//    void openTimer();
+
+
 };
 #endif // MAINWINDOW_H
