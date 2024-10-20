@@ -28,9 +28,10 @@ private:
     QString getHostinfo();
 
 private slots:
-//    void timeout();
-//    void showHostinfo();
-//    void openTimer();
+    void Timertimeout();
+    void showHostinfo();
+    void openTimer();
+    void clearText();
 
 
 };
